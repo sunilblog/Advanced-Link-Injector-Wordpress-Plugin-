@@ -91,14 +91,3 @@ This plugin automates the process of adding post links to static pages. Below is
   Switching a post to **Draft** does **not** remove the link.
   This allows curated links to remain visible even if the post is hidden from the main blog.
 
----
-
-If you want, I can also:
-
-* Add a **table of contents**
-* Rewrite this for a **WordPress.org plugin readme**
-* Add **example screenshots or diagrams**
-* Tighten it into a shorter **Quick Start** section
-
-Just say the word 🙂
-
