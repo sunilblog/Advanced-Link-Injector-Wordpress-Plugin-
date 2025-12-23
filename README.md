@@ -1,14 +1,12 @@
 # Advanced-Link-Injector-Wordpress-Plugin-
-Automatically injects and manages post links on static pages under specific headings based on categories. Features smart sync for Title/URL changes and automatic cleanup on Trash. Designed for high-traffic sites using the Classic Editor.
+Automatically injects and manages post links on static pages under specific headings based on categories. Features smart sync for Title/URL changes and automatic cleanup on Trash. Designed for sites using the Classic Editor.
 
           
-Here’s a clean **GitHub-ready `README.md` version** of your content, converted from HTML into Markdown and lightly polished for clarity and consistency (no meaning changed).
-
 ---
 
 ## 📖 Complete Usage Manual & Features
 
-This plugin automates the process of adding post links to static pages. Below is a full summary of all active features and how everything works.
+This plugin automates the process of adding post links to static pages. Below is a full summary of all active features and how everything works. Designed for sites using the Classic Editor.
 
 ---
 
