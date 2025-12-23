@@ -1,30 +1,104 @@
 # Advanced-Link-Injector-Wordpress-Plugin-
 Automatically injects and manages post links on static pages under specific headings based on categories. Features smart sync for Title/URL changes and automatic cleanup on Trash. Designed for high-traffic sites using the Classic Editor.
 
-           <h2>📖 Complete Usage Manual & Features</h2>
-            <p>This plugin automates the process of adding post links to static pages. Here is a summary of all active features to help you remember how it works:</p>
+          
+Here’s a clean **GitHub-ready `README.md` version** of your content, converted from HTML into Markdown and lightly polished for clarity and consistency (no meaning changed).
 
-            <div style="background: #f0f6fb; border: 1px solid #007cba; padding: 15px; border-radius: 4px; margin: 15px 0;">
-                <h4 style="margin-top:0;">🚀 Quick Start: How to Use</h4>
-                <ol style="margin-bottom:0;">
-                    <li><strong>Map Categories:</strong> In the table below, select a <strong>Post Category</strong> and the <strong>Target Page</strong> where links should appear.</li>
-                    <li><strong>Set the Heading:</strong> Enter the exact HTML heading from your page (e.g., <code>&lt;h2&gt;Latest Updates&lt;/h2&gt;</code>). The plugin uses this to find the list.</li>
-                    <li><strong>Prepare the List:</strong> Make sure your target page has a Bullet List (<code>&lt;ul&gt;</code>) started immediately after that heading.</li>
-                    <li><strong>Choose Position:</strong> Select <strong>Top</strong> (newest first) or <strong>Bottom</strong> (oldest first) for the link placement.</li>
-                    <li><strong>Go Live:</strong> Simply publish a new post in that category. The plugin does the rest!</li>
-                </ol>
-            </div>
+---
 
-            <p><strong>✅ Automated Synchronization:</strong><br>
-            • <strong>Title & URL Updates:</strong> If you change the post title or the permalink (URL) later, the plugin detects the change and automatically updates the link on the target page.<br>
-            • <strong>Category Swapping:</strong> If you move a post from Category A to Category B, the link will automatically disappear from the first heading and reappear under the new one (if both are mapped).</p>
+## 📖 Complete Usage Manual & Features
 
-           <p><strong>🛠️ Technical Standards:</strong><br>
-            • <strong>SEO Friendly:</strong> Links are added with <code>target="_blank"</code> and <code>rel="noopener"</code> for security and performance.<br>
-            • <strong>Safe Search:</strong> Handles special characters (like <code>&amp;</code>) automatically so search-and-replace never fails.<br>
-            • <strong>ID Tracking (The <code>data-ali-id</code>):</strong> Each link contains a hidden <code>data-ali-id="XX"</code> attribute. <strong>Do not remove this!</strong> This ID is what allows the plugin to find and update the link even if you change the Title or URL of the post.</p>
+This plugin automates the process of adding post links to static pages. Below is a full summary of all active features and how everything works.
 
-            <p><strong>🔄 Status & Removal Logic:</strong><br>
-            • <strong>Publishing:</strong> Links are added only when a post is Published.<br>
-            • <strong>Trashing:</strong> Moving a post to Trash is the <strong>only</strong> way to automatically remove the link from pages.<br>
-            • <strong>Drafts:</strong> Switching to "Draft" <u>will not</u> remove the link. This allows you to keep curated links active even if the post is hidden from the main blog.</p>
+---
+
+## 🚀 Quick Start: How to Use
+
+1. **Map Categories**
+   In the mapping table, select a **Post Category** and the **Target Page** where links should appear.
+
+2. **Set the Heading**
+   Enter the **exact HTML heading** from your target page, for example:
+
+   ```html
+   <h2>Latest Updates</h2>
+   ```
+
+   The plugin uses this heading to locate where links should be inserted.
+
+3. **Prepare the List**
+   Ensure the target page contains a bullet list (`<ul>`) **immediately after** the specified heading.
+
+4. **Choose Position**
+   Select where links should appear:
+
+   * **Top** → Newest posts first
+   * **Bottom** → Oldest posts first
+
+5. **Go Live**
+   Publish a new post in the mapped category — the plugin handles everything automatically.
+
+---
+
+## ✅ Automated Synchronization
+
+* **Title & URL Updates**
+  If you update a post title or permalink, the plugin automatically updates the corresponding link on the target page.
+
+* **Category Swapping**
+  If a post is moved from **Category A** to **Category B**:
+
+  * The link is removed from the original mapped heading
+  * The link is added under the new mapped heading (if configured)
+
+---
+
+## 🛠️ Technical Standards
+
+* **SEO Friendly**
+  Links are added with:
+
+  ```html
+  target="_blank" rel="noopener"
+  ```
+
+  for security and performance.
+
+* **Safe Search & Replace**
+  Special characters (such as `&`) are handled automatically, ensuring reliable updates.
+
+* **ID Tracking (`data-ali-id`)**
+  Each generated link includes a hidden attribute:
+
+  ```html
+  data-ali-id="XX"
+  ```
+
+  ⚠️ **Do not remove this attribute.**
+  It allows the plugin to reliably locate and update links even after title or URL changes.
+
+---
+
+## 🔄 Status & Removal Logic
+
+* **Publishing**
+  Links are added **only** when a post is published.
+
+* **Trashing**
+  Moving a post to **Trash** is the **only** action that automatically removes its link from pages.
+
+* **Drafts**
+  Switching a post to **Draft** does **not** remove the link.
+  This allows curated links to remain visible even if the post is hidden from the main blog.
+
+---
+
+If you want, I can also:
+
+* Add a **table of contents**
+* Rewrite this for a **WordPress.org plugin readme**
+* Add **example screenshots or diagrams**
+* Tighten it into a shorter **Quick Start** section
+
+Just say the word 🙂
+
